@@ -1,0 +1,1 @@
+"Food-related", "Animal faces", "Round patterned", "Outdoor scenes", "Hand / tool-related", "Clothed legs", "Body parts", "Metallic / round", "Clothed bodies", "Rectilinear scenes", "Central", "Human faces", "Round", "Rectilinear patterned", "Clothing"

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <h1>Review Your Labels</h1>
+
+    <section class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Trial</th>
+            <th>Dimension</th>
+            <th>Labels</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in rows %}
+          <tr>
+            <td>{{ row.trial_num }}</td>
+            <td>{{ row.dim_id }}</td>
+            <td>{{ row.label or "Missing" }}</td>
+            <td><a href="{{ url_for('trial_view', token=token, trial_num=row.trial_num) }}">Open</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    {% if all_complete %}
+      <form class="card" method="post" action="{{ url_for('submit', token=token) }}">
+        <p>All trials are complete. You can submit now.</p>
+        <button type="submit">Submit</button>
+      </form>
+    {% else %}
+      <section class="card">
+        <p>Some trials are missing labels. Please open and complete them before submitting.</p>
+      </section>
+    {% endif %}
+  </main>
+</body>
+</html>

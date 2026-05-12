@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trial {{ trial_num }} / {{ n_trials }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <h1>Trial {{ trial_num }} of {{ n_trials }}</h1>
+    <section class="card instruction-card">
+      <p><strong>Enter three descriptive words</strong> separated by commas.</p>
+      <p>The order does not matter. You can use any descriptive words (nouns or adjectives). Press Enter to save and continue.</p>
+    </section>
+
+    <form id="trial-form" class="card" method="post" action="{{ url_for('trial_save', token=token, trial_num=trial_num) }}">
+      <label for="label">Labels</label>
+      <textarea id="label" name="label" rows="3" required autofocus>{{ current_label }}</textarea>
+
+      <div class="actions">
+        <button type="submit" name="direction" value="prev">Previous</button>
+        {% if trial_num < n_trials %}
+          <button id="primary-next" type="submit" name="direction" value="next">Save & Next</button>
+        {% else %}
+          <button id="primary-next" type="submit" name="direction" value="review">Save & Review</button>
+        {% endif %}
+      </div>
+    </form>
+
+    <section class="card">
+      <img class="grid" src="{{ url_for('static', filename=trial.grid_path) }}" alt="Dimension image grid">
+    </section>
+  </main>
+  <script>
+    (function() {
+      const textarea = document.getElementById("label");
+      const primary = document.getElementById("primary-next");
+      if (!textarea || !primary) return;
+
+      textarea.focus();
+      const valLen = textarea.value.length;
+      textarea.setSelectionRange(valLen, valLen);
+
+      textarea.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          primary.click();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

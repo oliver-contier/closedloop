@@ -1,0 +1,45 @@
+# experimental paradigm
+n_runs: 8
+start_blank : 10
+end_blank : 10
+
+# (19*15+20)/60 = 305 sec experiment (160 TRs = 320 sec run) -> 15 seconds buffer
+
+# stimulus timing
+# stim_dur: 0.01
+# iti: 0.01
+stim_dur: 0.8
+iti: 0.2
+inter_block_blank: 0.
+catch_time: 0.3
+fix_switchtime_min: 3
+fix_switchtime_max: 10
+fix_switch_dur: 0.5
+
+# stimulus sizes [dva]
+fixation_degree: 0.35
+image_degree: 8.4
+text_height: .4
+
+# monitor settings
+window_fullscr: True
+
+# key mapping
+trigger_key: "5"
+response_key: "1"
+
+# PRISMA settings
+# monitor_width: 34
+# monitor_distance: 115
+# monitor_resolution: [1024, 768]
+
+# CONNECTOME settings
+# monitor_width: 29
+# monitor_distance: 134
+# monitor_resolution: [1024, 768]
+
+# 1080p home monitor settings
+monitor_resolution: [1920, 1080]
+monitor_width: 60
+monitor_distance: 100
+

@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.py
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Large/external data (deposited on OpenNeuro / OSF / Figshare; not committed)
+data/things_images/
+data/things-fmri/
+data/raw/
+data/preproc/
+data/mri_incoming/
+data/fmri_experiment/
+data/freesurfer_license/
+data/inkscape/
+data/facelabels/
+
+# Generated outputs
+results/
+plots/
+blockdesign_glm_wdir/
+fLoc_glm_wdir/
+
+# Local labeling task data
+labeling_task/pythonanywhere_app/data/
+labeling_task/pythonanywhere_app/instance/
+
+# Tensorboard / training artefacts
+runs/
+tensorboard/

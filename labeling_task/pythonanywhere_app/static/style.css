@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1a1d26;
+}
+
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px 32px;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d9deeb;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.grid {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccd3e4;
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #bcc5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #3569e8;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2c57c1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid #e4e8f2;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+a {
+  color: #2c57c1;
+  text-decoration: none;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.example-list {
+  display: grid;
+  gap: 16px;
+}
+
+.example-item {
+  border: 1px solid #e4e8f2;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fafbfe;
+}
+
+.example-grid {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccd3e4;
+  margin-bottom: 10px;
+}
+
+.instruction-list {
+  margin: 8px 0 12px 18px;
+  padding: 0;
+}
+
+.instruction-list li {
+  margin: 6px 0;
+}
+
+.instruction-card {
+  border-left: 4px solid #3569e8;
+}
