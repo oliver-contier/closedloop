@@ -9,7 +9,7 @@ setup(
     ),
     author="Oliver Contier",
     author_email="contier@cbs.mpg.de",
-    url="https://github.com/ViCCo-Group/closedloop",
+    url="https://github.com/oliver-contier/closedloop",
     license="MIT",
     package_dir={"": "src"},
     packages=find_packages(where="src"),

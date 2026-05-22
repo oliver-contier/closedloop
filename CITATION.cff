@@ -11,8 +11,8 @@ authors:
   - family-names: Hebart
     given-names: Martin N.
 
-repository-code: "https://github.com/ViCCo-Group/closedloop"
-url: "https://github.com/ViCCo-Group/closedloop"
+repository-code: "https://github.com/oliver-contier/closedloop"
+url: "https://github.com/oliver-contier/closedloop"
 license: MIT
 version: "0.1.0"
 date-released: "2026-05-12"
