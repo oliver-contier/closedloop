@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "closedloop: Closed-loop hypothesis generation and testing for characterizing representations in visually-responsive brain regions"
+type: software
+
+authors:
+  - family-names: Contier
+    given-names: Oliver
+  - family-names: Murty
+    given-names: N. Apurva Ratan
+  - family-names: Hebart
+    given-names: Martin N.
+
+repository-code: "https://github.com/ViCCo-Group/closedloop"
+url: "https://github.com/ViCCo-Group/closedloop"
+license: MIT
+version: "0.1.0"
+date-released: "2026-05-12"
+
+abstract: >
+  Analysis code and deposited derived assets for closed-loop hypothesis
+  generation and testing of interpretable representational dimensions in
+  visually-responsive brain regions, including in-silico FFA dimension
+  generation, THINGS-data validation, and targeted fMRI experiment analyses.
+
+keywords:
+  - fMRI
+  - FFA
+  - representational dimensions
+  - closed-loop hypothesis generation
